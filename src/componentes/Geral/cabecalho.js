@@ -9,7 +9,11 @@ export default function cabecalho() {
         let segundo = novaHora.getSeconds();
         minuto = zero(minuto);
         segundo = zero(segundo);
-        document.getElementById('hora').textContent = hora+':'+minuto+':'+segundo;
+        try{
+            document.getElementById('hora').textContent = hora+':'+minuto+':'+segundo;
+        }catch(err){
+            console.log(err)
+        }
     },1000)
 
     function zero(x) {
@@ -221,7 +225,7 @@ export default function cabecalho() {
 
                           <ul class="main-menu">
                               <li class="main-menu-active">
-                                  <a href="index.html">Inicio</a>
+                                  <a href="/">Inicio</a>
                                   <ul class="sub-menu">
                                       <li><a href="index.html">Homepage v1</a></li>
                                       <li><a href="home-02.html">Homepage v2</a></li>
@@ -230,7 +234,7 @@ export default function cabecalho() {
                               </li>
 
                               <li class="mega-menu-item">
-                                  <a href="category-01.html">Últimas</a>
+                                  <a href="/#/blog-grid">Últimas</a>
 
                                   <div class="sub-mega-menu">
                                       
@@ -363,7 +367,7 @@ export default function cabecalho() {
                               </li>
 
                               <li class="mega-menu-item">
-                                  <a href="category-02.html">Entretenimento </a>
+                                 <a href="/#/blog-grid">Entretenimento </a>
 
                                   <div class="sub-mega-menu">
 
@@ -496,7 +500,7 @@ export default function cabecalho() {
                               </li>
 
                               <li class="mega-menu-item">
-                                  <a href="category-01.html">Negócios</a>
+                                <a href="/#/blog-grid">Negócios</a>
 
                                   <div class="sub-mega-menu">
 
@@ -629,7 +633,7 @@ export default function cabecalho() {
                               </li>
 
                               <li class="mega-menu-item">
-                                  <a href="category-02.html">Viagem</a>
+                                <a href="/#/blog-grid">Viagem</a>
 
                                   <div class="sub-mega-menu">
 
@@ -762,7 +766,7 @@ export default function cabecalho() {
                               </li>
 
                               <li class="mega-menu-item">
-                                  <a href="category-01.html">Estilo de Vida</a>
+                                 <a href="/#/blog-grid">Estilo de Vida</a>
 
                                   <div class="sub-mega-menu">
 
@@ -895,7 +899,7 @@ export default function cabecalho() {
                               </li>
 
                               <li class="mega-menu-item">
-                                  <a href="category-02.html">Vídeos</a>
+                                 <a href="/#/blog-grid">Vídeos</a>
 
                                   <div class="sub-mega-menu">
 
